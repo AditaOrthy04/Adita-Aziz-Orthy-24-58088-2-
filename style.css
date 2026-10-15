@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f8ff;
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+    text-decoration: underline;
+}
+
+form {
+    width: 500px;
+    margin: auto;
+    border: 1px solid #333;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+select,
+textarea { margin-left: 10px ;
+		 padding : 10px;
+		border : 3px solid gray;
+		border-radius : 10px ;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+
+
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+input[type="reset"]:hover {
+    background-color: darker;
+}
+
+
+
+	
