@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Gym Membership</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>City Gym Membership</h1>
+    </header>
+
+    <h2>Membership Fees</h2>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Fee (Taka)</th>
+        </tr>
+        <tr>
+            <td>Monthly Plan</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>Quarterly Plan</td>
+            <td>4000</td>
+        </tr>
+        <tr>
+            <td>Yearly Plan</td>
+            <td>14000</td>
+        </tr>
+        <tr>
+            <td>Family Add-on (each)</td>
+            <td>500</td>
+        </tr>
+    </table>
+
+    <form id="membershipForm" onsubmit="return validateForm();" novalidate>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName">
+            <small class="error" id="fullNameError"></small>
+
+            <label for="age">Age</label>
+            <input type="number" id="age">
+            <small class="error" id="ageError"></small>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="text" id="mobile">
+            <small class="error" id="mobileError"></small>
+
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <small class="error" id="emailError"></small>
+
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <small class="error" id="passwordError"></small>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword">
+            <small class="error" id="confirmPasswordError"></small>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Membership Plan</legend>
+
+            <label for="plan">Plan</label>
+            <select id="plan">
+                <option value="">Select Plan</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Quarterly">Quarterly</option>
+                <option value="Yearly">Yearly</option>
+            </select>
+            <small class="error" id="planError"></small>
+
+            <label for="startDate">Start Date</label>
+            <input type="date" id="startDate">
+            <small class="error" id="startDateError"></small>
+
+            <label>Workout Time</label>
+            <input type="radio" name="workoutTime" value="Morning"> Morning
+            <input type="radio" name="workoutTime" value="Afternoon"> Afternoon
+            <input type="radio" name="workoutTime" value="Evening"> Evening
+            <small class="error" id="workoutTimeError"></small>
+
+            <label for="mainTrainer">Main Trainer</label>
+            <select id="mainTrainer">
+                <option value="">Select Trainer</option>
+                <option value="Rafi">Rafi</option>
+                <option value="Mitu">Mitu</option>
+                <option value="Sabbir">Sabbir</option>
+                <option value="Joya">Joya</option>
+            </select>
+            <small class="error" id="mainTrainerError"></small>
+
+            <label for="backupTrainer">Backup Trainer</label>
+            <select id="backupTrainer">
+                <option value="">Select Trainer</option>
+                <option value="Rafi">Rafi</option>
+                <option value="Mitu">Mitu</option>
+                <option value="Sabbir">Sabbir</option>
+                <option value="Joya">Joya</option>
+            </select>
+            <small class="error" id="backupTrainerError"></small>
+
+            <label for="familyAddons">Family Add-ons</label>
+            <input type="number" id="familyAddons">
+            <small class="error" id="familyAddonsError"></small>
+
+        </fieldset>
+    <input type="checkbox" id="fitness" onchange="toggleJoinButton()">
+
+    <label for="fitness">
+    I am medically fit to exercise and I accept the gym rules.
+    </label>
+        <br><br>
+
+        <button type="submit" id="joinButton" disabled>Join Now</button>
+
+        <div id="finalMessage"></div>
+        
+
+    </form>
+
+</body>
+</html>

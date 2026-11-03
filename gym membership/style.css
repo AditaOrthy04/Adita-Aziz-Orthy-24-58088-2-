@@ -1,0 +1,136 @@
+
+body {
+    background-color: #f5f0ff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #3b1f5e;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    width: 85%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 2px solid #6c4a8b;
+    padding: 12px;
+}
+
+th {
+    background-color: #7e57c2;
+    color: white;
+}
+
+form {
+    max-width: 560px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 2px solid #d6c6e8;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #d6c6e8;
+}
+
+fieldset {
+    border: 3px solid #7e57c2;
+    margin-bottom: 25px;
+    padding: 18px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    box-sizing: border-box;
+    border: 1px solid #b8a5cc;
+}
+
+input:focus, select:focus {
+    border-color: #7e57c2;
+    outline: none;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin: 12px 6px 12px 0;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin: 12px 8px 12px 0;
+    vertical-align: middle;
+}
+
+label[for="fitness"] {
+    display: inline-block;
+    margin-top: 0;
+    vertical-align: middle;
+}
+
+.error {
+    color: #e53935;
+    font-size: 12px;
+}
+
+button {
+    background-color: #7e57c2;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #5e35b1;
+}
+
+button:disabled {
+    background-color: #9e9e9e;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#finalMessage {
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+    padding: 12px;
+    margin-top: 18px;
+}
